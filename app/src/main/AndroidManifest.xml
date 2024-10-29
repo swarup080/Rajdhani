@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <queries>
+        <package android:name="com.phonepe.app" />
+        <package android:name="com.google.android.apps.nbu.paisa.user" />
+        <package android:name="net.one97.paytm" />
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RajdhaniBazar"
+        tools:targetApi="31">
+        <activity
+            android:name=".utlis.HalfSangamClose"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.HalfSangamOpen"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StarlineInfo"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.StarlineTriplePanna"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.StarlineDoublePanna"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.StarlineSinglePanna"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.StarlineSingleDigit"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.GaliLeftDigit"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.GaliRightDigit"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.GaliJodiDigit"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GaliInfo"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.FullSangam"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.HalfSangam"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.TriplePanna"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.DoublePanna"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.SinglePanna"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.JodiDigit"
+            android:exported="false" />
+        <activity
+            android:name=".utlis.SingleDigit"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StarLineGamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GaliGamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".authActivity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GamePlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GamesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.GameRatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HTPlayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WinAndBidHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BankDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WithdrawFundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddFundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.WalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ProfileActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".frame_layout" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".authActivity.SignUpActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

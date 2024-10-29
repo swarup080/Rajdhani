@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dark_blue"
+    tools:context=".activity.WithdrawFundActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/rajdhani"
+                android:text="Withdraw Fund"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        app:srcCompat="@drawable/toolbarimage" />
+    <!-- Display Account Balance -->
+    <TextView
+        android:id="@+id/textViewAccountBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="Account Balance: $100.00"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/withdraw"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Point"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bank_details_bg"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:fontFamily="@font/nunito_sans"
+        android:hint="Enter Point"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Select Payment Method"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:checkedButton="@+id/radio_button_1"
+        android:layout_width="match_parent"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/phonepay"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:buttonTint="@color/radio_bg"
+            android:text="Phone Pay" />
+
+        <RadioButton
+            android:id="@+id/gpay"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:buttonTint="@color/radio_bg"
+            android:text="Google Pay" />
+
+        <RadioButton
+            android:id="@+id/paytm"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/white"
+            android:buttonTint="@color/radio_bg"
+            android:text="Paytm" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Mobile Number"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+    <EditText
+        android:id="@+id/mobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@drawable/text_cursor"
+        android:background="@drawable/bank_details_bg"
+        android:ems="10"
+        android:fontFamily="@font/nunito_sans"
+        android:hint="Enter Mobile Number"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/poppins"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

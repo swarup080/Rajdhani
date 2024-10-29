@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/inria_sans</item>
+        <item>@font/inter</item>
+        <item>@font/nunito_sans</item>
+        <item>@font/poppins</item>
+        <item>@font/rajdhani</item>
+    </array>
+</resources>
